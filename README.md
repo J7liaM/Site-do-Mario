@@ -2,10 +2,10 @@
   Site do filme Mario Bros
 </h1>
 
-💻 Projeto
+💻 Projeto: 
 Este projeto é um site estático sobre o filme do Super Mario Bros.
 
-🚀 Tecnologias
+🚀 Tecnologias: 
 HTML
 CSS
 AOS Animate
