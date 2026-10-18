@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogar | Super Mario Bros.</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 32px 16px;
+            background: #141414;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: #ffcc00;
+        }
+
+        .tela-jogo {
+            display: grid;
+            place-items: center;
+            min-height: 320px;
+            border: 2px solid #e52521;
+            border-radius: 12px;
+            background: black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <a href="./index.html">← Voltar ao site</a>
+
+        <h1>Super Mario Bros.</h1>
+        <p>Esta será a página para jogar no navegador.</p>
+
+        <iframe
+    src="./jogo/Source/index.html"
+    title="Super Mario Bros. — jogo"
+    style="width: 100%; height: 620px; border: 2px solid #e52521; border-radius: 12px;"
+    allow="autoplay; fullscreen"
+    allowfullscreen>
+        </iframe>
+    </main>
+</body>
+</html>
