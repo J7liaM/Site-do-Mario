@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogar | Super Mario Bros.</title>
+
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap"
+          rel="stylesheet">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet">
+
+    <style>
+        .pagina-jogar {
+            min-height: 100vh;
+        }
+
+        .pagina-jogar header {
+            top: 0;
+            left: 0;
+        }
+
+        .pagina-jogar main {
+            display: block;
+            width: calc(100% - 32px);
+            max-width: 960px;
+            margin: 120px auto 40px;
+        }
+
+        .pagina-jogar h1 {
+            margin-bottom: 12px;
+        }
+
+        .pagina-jogar main p {
+            margin-bottom: 24px;
+        }
+
+        .jogo-frame {
+            display: block;
+            width: 100%;
+            height: 620px;
+            box-sizing: border-box;
+            border: 2px solid #e52521;
+            border-radius: 12px;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body class="pagina-jogar">
+    <div id="background">
+        <video class="video" autoplay loop muted playsinline>
+            <source src="./img/background-video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header>
+        <img src="./img/logo-cap.png" alt="Boné do Mario">
+
+        <ul class="navigation">
+            <li>
+                <a href="./index.html#app"
+                   class="navigation_link">Home</a>
+            </li>
+
+            <li>
+                <a href="./index.html#Historia"
+                   class="navigation_link">História</a>
+            </li>
+
+            <li>
+                <a href="./index.html#_wallpaper"
+                   class="navigation_link">Wallpapers</a>
+            </li>
+
+            <li>
+                <a href="./index.html#_Trailer"
+                   class="navigation_link">Trailer</a>
+            </li>
+
+            <li>
+                <a href="./jogar.html"
+                   class="navigation_link"
+                   aria-current="page">Jogar</a>
+            </li>
+        </ul>
+
+        <div class="_navigation_social">
+            <ul class="navigation_social">
+                <a href="https://www.facebook.com/SuperMario/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Super Mario no Facebook">
+                    <li style="--cor1: #09C5FF; --cor2: #00FFE1;">
+                        <span class="icon">
+                            <i class="bx bxl-facebook-circle"></i>
+                        </span>
+                        <span class="text">Facebook</span>
+                    </li>
+                </a>
+
+                <a href="https://www.instagram.com/nintendo_brasil/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Nintendo Brasil no Instagram">
+                    <li style="--cor1: #FB3997; --cor2: #FECF12;">
+                        <span class="icon">
+                            <i class="bx bxl-instagram-alt"></i>
+                        </span>
+                        <span class="text">Instagram</span>
+                    </li>
+                </a>
+
+                <a href="https://www.tiktok.com/@nintendoamerica"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Nintendo of America no TikTok">
+                    <li style="--cor1: #F54169; --cor2: #55EDF5;">
+                        <span class="icon">
+                            <i class="bx bxl-tiktok"></i>
+                        </span>
+                        <span class="text">TikTok</span>
+                    </li>
+                </a>
+
+                <a href="https://x.com/NintendoBrasil"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Nintendo Brasil no X">
+                    <li style="--cor1: #00ACEE; --cor2: #64EEF5;">
+                        <span class="icon">
+                            <i class="bx bxl-twitter"></i>
+                        </span>
+                        <span class="text">X / Twitter</span>
+                    </li>
+                </a>
+
+                <a href="https://www.youtube.com/@NintendoAmerica"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Nintendo of America no YouTube">
+                    <li style="--cor1: #F00201; --cor2: #FFFFFF;">
+                        <span class="icon">
+                            <i class="bx bxl-youtube"></i>
+                        </span>
+                        <span class="text">YouTube</span>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <h1>Super Mario Bros.</h1>
+        <p>Clique dentro do jogo para usar os controles do teclado.</p>
+
+        <iframe
+            class="jogo-frame"
+            src="./jogo/Source/index.html"
+            title="Super Mario Bros. — FullScreenMario"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+        </iframe>
+    </main>
+</body>
+</html>
